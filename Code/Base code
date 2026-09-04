@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main()
+{
+	int Num1,Num2, Choice,result;
+	printf("Enter Num1 and Num2");
+	scanf("%d%d",&Num1,&Num2);
+	printf("ARITHMETIC OPERATIONS");
+	printf("1.Sum \n 2.Difference \n 3.Product \n 4.Divison \n");
+	printf("Enter your choice");
+	scanf("%d",&Choice);
+	switch(Choice)
+	{
+		case 1:
+			{result= Num1+Num2;
+			printf("Sum=%d",result);
+			break;}
+			
+		case 2:
+			{result= Num1-Num2;
+			printf("Difference=%d",result);
+			break;
+			}
+		case 3:
+			{result= Num1*Num2;
+			printf("Product=%d",result);
+			break;
+			}
+		case 4:
+			
+			{result= Num1/Num2;
+			printf("Divison=%d",result);
+			break;
+			}
+			
+		default:
+				{
+		printf("you have entered the wrong choice, please select again between 1 to 4");
+			break;}
+				
+	}
+	return 0;
+}
+
+  
